@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B162CC6C2A19A62D005889F3 /* PianoKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162CC6B2A19A62D005889F3 /* PianoKeyboardApp.swift */; };
+		B162CC6E2A19A62D005889F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162CC6D2A19A62D005889F3 /* ContentView.swift */; };
+		B162CC702A19A62F005889F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B162CC6F2A19A62F005889F3 /* Assets.xcassets */; };
+		B162CC732A19A62F005889F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B162CC722A19A62F005889F3 /* Preview Assets.xcassets */; };
+		B162CC7D2A19A62F005889F3 /* PianoKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162CC7C2A19A62F005889F3 /* PianoKeyboardTests.swift */; };
+		B162CC872A19A62F005889F3 /* PianoKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162CC862A19A62F005889F3 /* PianoKeyboardUITests.swift */; };
+		B162CC892A19A62F005889F3 /* PianoKeyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162CC882A19A62F005889F3 /* PianoKeyboardUITestsLaunchTests.swift */; };
+		B162CCA12A19AA72005889F3 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = B162CCA02A19AA72005889F3 /* AudioKit */; };
+		B162CCAD2A19BD11005889F3 /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = B162CCAC2A19BD11005889F3 /* Keyboard */; };
+		B162CCB02A19BD4B005889F3 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = B162CCAF2A19BD4B005889F3 /* SoundpipeAudioKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B162CC792A19A62F005889F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B162CC602A19A62D005889F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B162CC672A19A62D005889F3;
+			remoteInfo = PianoKeyboard;
+		};
+		B162CC832A19A62F005889F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B162CC602A19A62D005889F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B162CC672A19A62D005889F3;
+			remoteInfo = PianoKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B162CC682A19A62D005889F3 /* PianoKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162CC6B2A19A62D005889F3 /* PianoKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboardApp.swift; sourceTree = "<group>"; };
+		B162CC6D2A19A62D005889F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B162CC6F2A19A62F005889F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B162CC722A19A62F005889F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B162CC782A19A62F005889F3 /* PianoKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162CC7C2A19A62F005889F3 /* PianoKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboardTests.swift; sourceTree = "<group>"; };
+		B162CC822A19A62F005889F3 /* PianoKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162CC862A19A62F005889F3 /* PianoKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboardUITests.swift; sourceTree = "<group>"; };
+		B162CC882A19A62F005889F3 /* PianoKeyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B162CC652A19A62D005889F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B162CCA12A19AA72005889F3 /* AudioKit in Frameworks */,
+				B162CCAD2A19BD11005889F3 /* Keyboard in Frameworks */,
+				B162CCB02A19BD4B005889F3 /* SoundpipeAudioKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B162CC752A19A62F005889F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B162CC7F2A19A62F005889F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B162CC5F2A19A62D005889F3 = {
+			isa = PBXGroup;
+			children = (
+				B162CC6A2A19A62D005889F3 /* PianoKeyboard */,
+				B162CC7B2A19A62F005889F3 /* PianoKeyboardTests */,
+				B162CC852A19A62F005889F3 /* PianoKeyboardUITests */,
+				B162CC692A19A62D005889F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B162CC692A19A62D005889F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B162CC682A19A62D005889F3 /* PianoKeyboard.app */,
+				B162CC782A19A62F005889F3 /* PianoKeyboardTests.xctest */,
+				B162CC822A19A62F005889F3 /* PianoKeyboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B162CC6A2A19A62D005889F3 /* PianoKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B162CC6B2A19A62D005889F3 /* PianoKeyboardApp.swift */,
+				B162CC6D2A19A62D005889F3 /* ContentView.swift */,
+				B162CC6F2A19A62F005889F3 /* Assets.xcassets */,
+				B162CC712A19A62F005889F3 /* Preview Content */,
+			);
+			path = PianoKeyboard;
+			sourceTree = "<group>";
+		};
+		B162CC712A19A62F005889F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B162CC722A19A62F005889F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B162CC7B2A19A62F005889F3 /* PianoKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				B162CC7C2A19A62F005889F3 /* PianoKeyboardTests.swift */,
+			);
+			path = PianoKeyboardTests;
+			sourceTree = "<group>";
+		};
+		B162CC852A19A62F005889F3 /* PianoKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B162CC862A19A62F005889F3 /* PianoKeyboardUITests.swift */,
+				B162CC882A19A62F005889F3 /* PianoKeyboardUITestsLaunchTests.swift */,
+			);
+			path = PianoKeyboardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B162CC672A19A62D005889F3 /* PianoKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B162CC8C2A19A62F005889F3 /* Build configuration list for PBXNativeTarget "PianoKeyboard" */;
+			buildPhases = (
+				B162CC642A19A62D005889F3 /* Sources */,
+				B162CC652A19A62D005889F3 /* Frameworks */,
+				B162CC662A19A62D005889F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PianoKeyboard;
+			packageProductDependencies = (
+				B162CCA02A19AA72005889F3 /* AudioKit */,
+				B162CCAC2A19BD11005889F3 /* Keyboard */,
+				B162CCAF2A19BD4B005889F3 /* SoundpipeAudioKit */,
+			);
+			productName = PianoKeyboard;
+			productReference = B162CC682A19A62D005889F3 /* PianoKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B162CC772A19A62F005889F3 /* PianoKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B162CC8F2A19A62F005889F3 /* Build configuration list for PBXNativeTarget "PianoKeyboardTests" */;
+			buildPhases = (
+				B162CC742A19A62F005889F3 /* Sources */,
+				B162CC752A19A62F005889F3 /* Frameworks */,
+				B162CC762A19A62F005889F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B162CC7A2A19A62F005889F3 /* PBXTargetDependency */,
+			);
+			name = PianoKeyboardTests;
+			productName = PianoKeyboardTests;
+			productReference = B162CC782A19A62F005889F3 /* PianoKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B162CC812A19A62F005889F3 /* PianoKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B162CC922A19A62F005889F3 /* Build configuration list for PBXNativeTarget "PianoKeyboardUITests" */;
+			buildPhases = (
+				B162CC7E2A19A62F005889F3 /* Sources */,
+				B162CC7F2A19A62F005889F3 /* Frameworks */,
+				B162CC802A19A62F005889F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B162CC842A19A62F005889F3 /* PBXTargetDependency */,
+			);
+			name = PianoKeyboardUITests;
+			productName = PianoKeyboardUITests;
+			productReference = B162CC822A19A62F005889F3 /* PianoKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B162CC602A19A62D005889F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B162CC672A19A62D005889F3 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					B162CC772A19A62F005889F3 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = B162CC672A19A62D005889F3;
+					};
+					B162CC812A19A62F005889F3 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = B162CC672A19A62D005889F3;
+					};
+				};
+			};
+			buildConfigurationList = B162CC632A19A62D005889F3 /* Build configuration list for PBXProject "PianoKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B162CC5F2A19A62D005889F3;
+			packageReferences = (
+				B162CC9F2A19AA72005889F3 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				B162CCAB2A19BD11005889F3 /* XCRemoteSwiftPackageReference "Keyboard" */,
+				B162CCAE2A19BD4B005889F3 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
+			productRefGroup = B162CC692A19A62D005889F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B162CC672A19A62D005889F3 /* PianoKeyboard */,
+				B162CC772A19A62F005889F3 /* PianoKeyboardTests */,
+				B162CC812A19A62F005889F3 /* PianoKeyboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B162CC662A19A62D005889F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B162CC732A19A62F005889F3 /* Preview Assets.xcassets in Resources */,
+				B162CC702A19A62F005889F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B162CC762A19A62F005889F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B162CC802A19A62F005889F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B162CC642A19A62D005889F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B162CC6E2A19A62D005889F3 /* ContentView.swift in Sources */,
+				B162CC6C2A19A62D005889F3 /* PianoKeyboardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B162CC742A19A62F005889F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B162CC7D2A19A62F005889F3 /* PianoKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B162CC7E2A19A62F005889F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B162CC872A19A62F005889F3 /* PianoKeyboardUITests.swift in Sources */,
+				B162CC892A19A62F005889F3 /* PianoKeyboardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B162CC7A2A19A62F005889F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B162CC672A19A62D005889F3 /* PianoKeyboard */;
+			targetProxy = B162CC792A19A62F005889F3 /* PBXContainerItemProxy */;
+		};
+		B162CC842A19A62F005889F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B162CC672A19A62D005889F3 /* PianoKeyboard */;
+			targetProxy = B162CC832A19A62F005889F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B162CC8A2A19A62F005889F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B162CC8B2A19A62F005889F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B162CC8D2A19A62F005889F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PianoKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = H2SLZBGHFZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruben-ravn.PianoKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B162CC8E2A19A62F005889F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PianoKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = H2SLZBGHFZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruben-ravn.PianoKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B162CC902A19A62F005889F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2SLZBGHFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruben-ravn.PianoKeyboardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoKeyboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PianoKeyboard";
+			};
+			name = Debug;
+		};
+		B162CC912A19A62F005889F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2SLZBGHFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruben-ravn.PianoKeyboardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoKeyboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PianoKeyboard";
+			};
+			name = Release;
+		};
+		B162CC932A19A62F005889F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2SLZBGHFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruben-ravn.PianoKeyboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PianoKeyboard;
+			};
+			name = Debug;
+		};
+		B162CC942A19A62F005889F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2SLZBGHFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruben-ravn.PianoKeyboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PianoKeyboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B162CC632A19A62D005889F3 /* Build configuration list for PBXProject "PianoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B162CC8A2A19A62F005889F3 /* Debug */,
+				B162CC8B2A19A62F005889F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B162CC8C2A19A62F005889F3 /* Build configuration list for PBXNativeTarget "PianoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B162CC8D2A19A62F005889F3 /* Debug */,
+				B162CC8E2A19A62F005889F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B162CC8F2A19A62F005889F3 /* Build configuration list for PBXNativeTarget "PianoKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B162CC902A19A62F005889F3 /* Debug */,
+				B162CC912A19A62F005889F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B162CC922A19A62F005889F3 /* Build configuration list for PBXNativeTarget "PianoKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B162CC932A19A62F005889F3 /* Debug */,
+				B162CC942A19A62F005889F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B162CC9F2A19AA72005889F3 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B162CCAB2A19BD11005889F3 /* XCRemoteSwiftPackageReference "Keyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Keyboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B162CCAE2A19BD4B005889F3 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B162CCA02A19AA72005889F3 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B162CC9F2A19AA72005889F3 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		B162CCAC2A19BD11005889F3 /* Keyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B162CCAB2A19BD11005889F3 /* XCRemoteSwiftPackageReference "Keyboard" */;
+			productName = Keyboard;
+		};
+		B162CCAF2A19BD4B005889F3 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B162CCAE2A19BD4B005889F3 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B162CC602A19A62D005889F3 /* Project object */;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BEB21751-8B7A-49AB-BD30-93E092CF3133"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC69BFD7-D70A-41F2-AFF9-ED29F6F41A34"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/PianoKeyboard-dxjidpxdejvvitfpykngxagtrfqe/SourcePackages/checkouts/Keyboard/Sources/Keyboard/KeyboardKey.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "init(pitch:isActivated:text:whiteKeyColor:blackKeyColor:pressedColor:flatTop:alignment:isActivatedExternally:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "558AF238-7D66-4115-AAF5-031C1A230DA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/PianoKeyboard-dxjidpxdejvvitfpykngxagtrfqe/SourcePackages/checkouts/Keyboard/Sources/Keyboard/KeyboardKey.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init(pitch:isActivated:text:whiteKeyColor:blackKeyColor:pressedColor:flatTop:alignment:isActivatedExternally:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
